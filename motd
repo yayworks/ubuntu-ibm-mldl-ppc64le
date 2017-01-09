@@ -6,6 +6,7 @@ script before accessing them, e.g. one of the following:
 	source /opt/DL/caffe-ibm/bin/caffe-activate
 	source /opt/DL/caffe-nv/bin/caffe-activate	# recommended
 	source /opt/DL/openblas/bin/openblas-activate
+	source /opt/DL/tensorflow/bin/tensorflow-activate
 	source /opt/DL/theano/bin/theano-activate
 	source /opt/DL/torch/bin/torch-activate
 
@@ -16,6 +17,7 @@ directory - e.g. one of the following:
 	/opt/DL/caffe-*/docs
 	/opt/DL/openblas/doc
 	/opt/DL/repo/doc
+	/opt/DL/tensorflow/doc
 	/opt/DL/theano/doc
 	/opt/DL/torch/doc
 
