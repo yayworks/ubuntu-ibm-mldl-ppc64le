@@ -5,6 +5,7 @@ script before accessing them, e.g. one of the following:
 	source /opt/DL/caffe-bvlc/bin/caffe-activate
 	source /opt/DL/caffe-ibm/bin/caffe-activate
 	source /opt/DL/caffe-nv/bin/caffe-activate	# recommended
+	source /opt/DL/chainer/bin/chainer-activate
 	source /opt/DL/openblas/bin/openblas-activate
 	source /opt/DL/tensorflow/bin/tensorflow-activate
 	source /opt/DL/theano/bin/theano-activate
@@ -15,6 +16,7 @@ please read the framework-specific documentation in its respective doc[s]
 directory - e.g. one of the following:
 
 	/opt/DL/caffe-*/docs
+	/opt/DL/chainer/doc
 	/opt/DL/openblas/doc
 	/opt/DL/repo/doc
 	/opt/DL/tensorflow/doc
