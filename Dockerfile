@@ -3,7 +3,7 @@ MAINTAINER YayWorks, Inc.
 
 
 ADD ./yb-pwr8-lab.cfg /tmp/yb-pwr8-lab.cfg
-RUN chmod +x /tmp/yb-pwr8-lab.cfg
+CMD ["chmod +x /tmp/yb-pwr8-lab.cfg"]
 
 USER root
 CMD ["/tmp/yb-pwr8-lab.cfg"]
