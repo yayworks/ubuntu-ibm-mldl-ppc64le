@@ -7,7 +7,6 @@ ADD ./yb-pwr8-lab.cfg /tmp/yb-pwr8-lab.cfg
 USER root
 CMD ["/tmp/yb-pwr8-lab.cfg"]
 
-ADD motd /etc/motd
-ADD help-launch.html /etc/NAE/help-launch.html
+ADD ./NAE/help.html /etc/NAE/help.html
 
 EXPOSE 3000
