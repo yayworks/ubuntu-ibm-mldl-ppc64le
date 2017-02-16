@@ -3,11 +3,12 @@ MAINTAINER YayWorks, Inc.
 
 
 ADD ./NAE/help.html /etc/NAE/help.html
-ADD ./NAE/install.tar /etc/NAE/install.tar
+#ADD ./NAE/install.tar /etc/NAE/install.tar
+ADD ./NAE/install.tar /usr/local/install.tar
 ADD ./sudoers /etc/sudoers
 
-#WORKDIR /etc/NAE
-#CMD ["/usr/bin/tar", "xpf", "/etc/NAE/install.tar"]
+WORKDIR /usr/local
+CMD ["/usr/bin/tar", "xpf", "/usr/local/install.tar"]
 #CMD ["sudo", "chmod", " +x", "/etc/NAE/install.sh"]
 ##CMD ["/etc/NAE/install.sh"]
 
