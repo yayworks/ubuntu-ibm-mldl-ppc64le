@@ -9,7 +9,9 @@ ADD ./sudoers /etc/sudoers
 
 WORKDIR /usr/local
 CMD ["/usr/bin/tar", "xpf", "/usr/local/install.tar"]
-#CMD ["sudo", "chmod", " +x", "/etc/NAE/install.sh"]
+
+WORKDIR /home/nimbix
+CMD ["/usr/bin/sudo",  "/usr/local/install.tar/install.sh"]
 ##CMD ["/etc/NAE/install.sh"]
 
 EXPOSE 3000
