@@ -15,7 +15,7 @@ install.shï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï
 ###############################################################################
 
 echo "Pre configuring this system as a Basic Yaybench POWER8/GPU Lab..."
-/sbin/init
+
 wget https://s3.amazonaws.com/yb-lab-cfg/ibm-6.9.1.0-node-v6.9.1-linux-ppc64le.bin
 chmod +x ibm-6.9.1.0-node-v6.9.1-linux-ppc64le.bin
 
