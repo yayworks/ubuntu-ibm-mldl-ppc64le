@@ -14,4 +14,6 @@ WORKDIR /home/nimbix
 CMD ["/usr/bin/sudo",  "/usr/local/install.tar/install.sh"]
 ##CMD ["/etc/NAE/install.sh"]
 
+EXPOSE 22
+EXPOSE 80
 EXPOSE 3000
