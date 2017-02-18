@@ -12,6 +12,6 @@
 # By default this script does nothing.
 sleep 5
 cd /home/nimbix
-/usr/local/install.tar/install.sh
+sh '/usr/local/install.tar/install.sh'
 
 exit 0
