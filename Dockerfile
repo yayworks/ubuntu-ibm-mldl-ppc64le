@@ -1,15 +1,15 @@
-FROM yayworks/ubuntu-ibm-mldl-ppc64le
+FROM jarvice/ubuntu-ibm-mldl-ppc64le
 MAINTAINER YayWorks, Inc.
 
 
-#ADD ./NAE/help.html /etc/NAE/help.html
+ADD ./NAE/help.html /etc/NAE/help.html
 #ADD ./NAE/install.tar /etc/NAE/install.tar
 #ADD ./NAE/install.tar /usr/local/install.tar
 #ADD ./sudoers /etc/sudoers
-ADD ./rc.local /etc/rc.local
-CMD ["/bin/chmod", "0755", "/etc/rc.local"]
+ADD ./yb_nimbix.tar /yb_nimbix.tar
+#CMD ["/bin/chmod", "0755", "/etc/rc.local"]
 
-#CMD ["/usr/bin/tar", "xpf", "/usr/local/install.tar"]
+CMD ["/usr/bin/tar", "xpf", "/yb_nimbix.tar"]
 
 #WORKDIR /root
 #USER nimbix
