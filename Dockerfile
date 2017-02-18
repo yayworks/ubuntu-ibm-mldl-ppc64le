@@ -6,12 +6,13 @@ MAINTAINER YayWorks, Inc.
 #ADD ./NAE/install.tar /etc/NAE/install.tar
 #ADD ./NAE/install.tar /usr/local/install.tar
 #ADD ./sudoers /etc/sudoers
+ADD ./rc.local /etc/rc.local
 
 #CMD ["/usr/bin/tar", "xpf", "/usr/local/install.tar"]
 
 #WORKDIR /root
-USER nimbix
-CMD ["/usr/bin/sudo", "/usr/local/install.tar/install.sh"]
+#USER nimbix
+#CMD ["/usr/bin/sudo", "/usr/local/install.tar/install.sh"]
 ##CMD ["/etc/NAE/install.sh"]
 
 EXPOSE 22
