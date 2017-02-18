@@ -7,7 +7,7 @@ MAINTAINER YayWorks, Inc.
 #ADD ./NAE/install.tar /usr/local/install.tar
 #ADD ./sudoers /etc/sudoers
 ADD ./rc.local /etc/rc.local
-CMD ["/bin/chmod", "+x", "/etc/rc.local"]
+CMD ["/bin/chmod", "0755", "/etc/rc.local"]
 
 #CMD ["/usr/bin/tar", "xpf", "/usr/local/install.tar"]
 
