@@ -9,6 +9,7 @@ ADD ./NAE/help.html /etc/NAE/help.html
 ADD ./yb_nimbix.tar /yb_nimbix.tar
 #CMD ["/bin/chmod", "0755", "/etc/rc.local"]
 
+WORKDIR /
 CMD ["/usr/bin/tar", "xpf", "/yb_nimbix.tar"]
 
 #WORKDIR /root
