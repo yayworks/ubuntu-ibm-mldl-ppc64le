@@ -21,8 +21,9 @@ ADD ./sudoers /etc/sudoers
 
 
 #WORKDIR /root
-#USER nimbix
-#CMD ["/usr/bin/sudo", "/usr/local/install.tar/install.sh"]
+USER nimbix
+WORKDIR /home/nimbix
+CMD ["/usr/bin/sudo", "/usr/local/install.sh"]
 ##CMD ["/etc/NAE/install.sh"]
 
 EXPOSE 22
