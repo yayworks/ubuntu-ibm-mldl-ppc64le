@@ -6,8 +6,11 @@ ADD ./NAE/help.html /etc/NAE/help.html
 #ADD ./NAE/install.tar /etc/NAE/install.tar
 #ADD ./NAE/install.tar /usr/local/install.tar
 ADD ./sudoers /etc/sudoers
-ADD ./etc.tar /etc.tar
+#ADD ./etc.tar /etc.tar
 #COPY ./yb_nimbix.tar /yb_nimbix.tar
+
+COPY ./install.sh /usr/local/install.sh
+CMD ["/bin/chmod", "0755", "/usr/local/install.sh"]
 
 
 #WORKDIR /
