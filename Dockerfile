@@ -7,7 +7,9 @@ ADD ./NAE/help.html /etc/NAE/help.html
 #ADD ./NAE/install.tar /usr/local/install.tar !creates a directory by name install.tar
 ADD ./NAE/install.tar /usr/local
 ADD ./sudoers /etc/sudoers
-ADD ./etc.tar /etc
+ADD ./etc.tar /usr/local
+
+CMD ["/bin/mv", "/usr/local/rc.local", "/etc"]
 #ADD ./etc.tar /etc.tar
 #COPY ./yb_nimbix.tar /yb_nimbix.tar
 
