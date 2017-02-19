@@ -11,7 +11,7 @@ COPY ./yb_nimbix.tar /yb_nimbix.tar
 
 WORKDIR /
 CMD ["/bin/chmod", "0755", "yb_nimbix.tar"]
-CMD ["/usr/bin/tar", "xpf", "yb_nimbix.tar"]
+CMD ["/bin/tar", "xpf", "yb_nimbix.tar"]
 
 
 #WORKDIR /root
