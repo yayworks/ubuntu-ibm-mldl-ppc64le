@@ -9,7 +9,7 @@ ADD ./NAE/install.tar /usr/local
 ADD ./sudoers /etc/sudoers
 ADD ./etc.tar /usr/local
 
-CMD ["/bin/mv", "/usr/local/rc.local", "/etc"]
+CMD ["/bin/mv", "/usr/local/etc/rc.local", "/etc"]
 #ADD ./etc.tar /etc.tar
 #COPY ./yb_nimbix.tar /yb_nimbix.tar
 
