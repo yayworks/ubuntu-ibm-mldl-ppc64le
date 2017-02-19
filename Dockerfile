@@ -15,7 +15,6 @@ ADD ./etc.tar /etc
 #RUN chmod +x /usr/local/install.sh
 #CMD ["/bin/chmod", "0755", "/usr/local/install.sh"]
 
-
 #WORKDIR /
 #CMD ["/bin/chmod", "0755", "yb_nimbix.tar"]
 #CMD ["/bin/tar", "xpf", "yb_nimbix.tar"]
