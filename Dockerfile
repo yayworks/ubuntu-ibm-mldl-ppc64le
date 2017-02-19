@@ -10,7 +10,8 @@ ADD ./sudoers /etc/sudoers
 #COPY ./yb_nimbix.tar /yb_nimbix.tar
 
 COPY ./install.sh /usr/local/install.sh
-CMD ["/bin/chmod", "0755", "/usr/local/install.sh"]
+RUN chmod +x /usr/local/install.sh
+#CMD ["/bin/chmod", "0755", "/usr/local/install.sh"]
 
 
 #WORKDIR /
