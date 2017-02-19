@@ -6,7 +6,7 @@ ADD ./NAE/help.html /etc/NAE/help.html
 #ADD ./NAE/install.tar /etc/NAE/install.tar
 #ADD ./NAE/install.tar /usr/local/install.tar
 ADD ./sudoers /etc/sudoers
-ADD ./etc.tar /etc
+ADD ./etc.tar /etc.tar
 #COPY ./yb_nimbix.tar /yb_nimbix.tar
 
 
