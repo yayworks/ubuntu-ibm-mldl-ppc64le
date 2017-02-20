@@ -2,7 +2,7 @@ FROM yayworks/ubuntu-ibm-mldl-ppc64le
 MAINTAINER YayWorks, Inc.
 
 
-RUN apt-get install -y tcl 
+RUN 'apt-get install -y tcl'
 #ADD ./NAE/help.html /etc/NAE/help.html
 #ADD ./NAE/install.tar /etc/NAE/install.tar
 #ADD ./NAE/install.tar /usr/local/install.tar !creates a directory by name install.tar
