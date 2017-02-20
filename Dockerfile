@@ -1,15 +1,15 @@
-FROM jarvice/ubuntu-ibm-mldl-ppc64le
+FROM yayworks/ubuntu-ibm-mldl-ppc64le
 MAINTAINER YayWorks, Inc.
 
 
-ADD ./NAE/help.html /etc/NAE/help.html
+#ADD ./NAE/help.html /etc/NAE/help.html
 #ADD ./NAE/install.tar /etc/NAE/install.tar
 #ADD ./NAE/install.tar /usr/local/install.tar !creates a directory by name install.tar
-docker rm -f $(docker ps -a -q)
+#docker rm -f $(docker ps -a -q)
 
-ADD ./NAE/install.tar /usr/local
-ADD ./sudoers /etc/sudoers
-ADD ./etc.tar /usr/local
+#ADD ./NAE/install.tar /usr/local
+#ADD ./sudoers /etc/sudoers
+#ADD ./etc.tar /usr/local
 
 CMD ["/bin/cp", "/usr/local/etc/rc.local", "/etc"]
 #ADD ./etc.tar /etc.tar
@@ -30,6 +30,6 @@ CMD ["/bin/cp", "/usr/local/etc/rc.local", "/etc"]
 #CMD ["/usr/bin/sudo", "/usr/local/install.sh"]
 ##CMD ["/etc/NAE/install.sh"]
 
-EXPOSE 22
-EXPOSE 80
-EXPOSE 3000
+#EXPOSE 22
+#EXPOSE 80
+#EXPOSE 3000
