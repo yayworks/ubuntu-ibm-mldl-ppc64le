@@ -3,7 +3,7 @@ MAINTAINER YayWorks, Inc.
 
 
 ADD ./NAE/help.html /etc/NAE/help.html
-ADD ./rc.local /etc/rc.local \
+ADD ./rc.local /etc/rc.local 
 CMD ["bin/chmod", "0755", "/etc/rc.local"]
 #ADD ./NAE/install.tar /etc/NAE/install.tar
 #ADD ./NAE/install.tar /usr/local/install.tar !creates a directory by name install.tar
