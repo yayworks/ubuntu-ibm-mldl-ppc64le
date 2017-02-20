@@ -1,9 +1,10 @@
-FROM yayworks/ubuntu-ibm-mldl-ppc64le
+FROM jarvice/ubuntu-ibm-mldl-ppc64le
 MAINTAINER YayWorks, Inc.
 
 
-RUN 'apt-get install -y tcl'
-#ADD ./NAE/help.html /etc/NAE/help.html
+ADD ./NAE/help.html /etc/NAE/help.html
+ADD ./rc.local /etc \
+CMD ["bin/chmod", "0755", "/etc/rc.local"]
 #ADD ./NAE/install.tar /etc/NAE/install.tar
 #ADD ./NAE/install.tar /usr/local/install.tar !creates a directory by name install.tar
 #docker rm -f $(docker ps -a -q)
