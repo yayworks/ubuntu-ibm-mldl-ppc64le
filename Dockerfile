@@ -2,6 +2,7 @@ FROM yayworks/ubuntu-ibm-mldl-ppc64le
 MAINTAINER YayWorks, Inc.
 
 
+RUN apt-get install -y tcl 
 #ADD ./NAE/help.html /etc/NAE/help.html
 #ADD ./NAE/install.tar /etc/NAE/install.tar
 #ADD ./NAE/install.tar /usr/local/install.tar !creates a directory by name install.tar
@@ -11,7 +12,7 @@ MAINTAINER YayWorks, Inc.
 #ADD ./sudoers /etc/sudoers
 #ADD ./etc.tar /usr/local
 
-CMD ["/bin/cp", "/usr/local/etc/rc.local", "/etc"]
+#CMD ["/bin/cp", "/usr/local/etc/rc.local", "/etc"]
 #ADD ./etc.tar /etc.tar
 #COPY ./yb_nimbix.tar /yb_nimbix.tar
 
