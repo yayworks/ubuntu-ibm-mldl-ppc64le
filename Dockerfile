@@ -1,10 +1,10 @@
-FROM yayworks/ubuntu-ibm-mldl-ppc64le
+FROM jarvice/ubuntu-ibm-mldl-ppc64le
 MAINTAINER YayWorks, Inc.
 
 
-#ADD ./NAE/help.html /etc/NAE/help.html
-#COPY ./rc.local /etc/rc.local 
-RUN ["/bin/chmod", "0755", "/etc/rc.local"]
+ADD ./NAE/help.html /etc/NAE/help.html
+COPY ./rc.local /usr/local/rc.local 
+CMD ["/bin/cp", "/usr/local/rc.local", "/etc/rc.local"]
 #ADD ./NAE/install.tar /etc/NAE/install.tar
 #ADD ./NAE/install.tar /usr/local/install.tar !creates a directory by name install.tar
 #docker rm -f $(docker ps -a -q)
