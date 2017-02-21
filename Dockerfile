@@ -3,13 +3,13 @@ MAINTAINER YayWorks, Inc.
 
 
 ADD ./NAE/help.html /etc/NAE/help.html
-COPY ./rc.local /usr/local/rc.local 
-CMD ["/bin/cp", "/usr/local/rc.local", "/etc/rc.local"]
+#COPY ./rc.local /usr/local/rc.local 
+#CMD ["/bin/cp", "/usr/local/rc.local", "/etc/rc.local"]
 #ADD ./NAE/install.tar /etc/NAE/install.tar
 #ADD ./NAE/install.tar /usr/local/install.tar !creates a directory by name install.tar
 #docker rm -f $(docker ps -a -q)
 
-#ADD ./NAE/install.tar /usr/local
+ADD ./install.tar /usr/local
 #ADD ./sudoers /etc/sudoers
 #ADD ./etc.tar /usr/local
 
@@ -32,6 +32,6 @@ CMD ["/bin/cp", "/usr/local/rc.local", "/etc/rc.local"]
 #CMD ["/usr/bin/sudo", "/usr/local/install.sh"]
 ##CMD ["/etc/NAE/install.sh"]
 
-#EXPOSE 22
+EXPOSE 22
 #EXPOSE 80
-#EXPOSE 3000
+EXPOSE 3000
