@@ -10,8 +10,8 @@ ADD ./NAE/help.html /etc/NAE/help.html
 #docker rm -f $(docker ps -a -q)
 
 ADD ./install.tar /usr/local
-CMD ["/bin/chown", "root.root", /usr/local/install.sh"]
-CMD ["/bin/chown", "root.root", /usr/local/rc.local"]
+CMD ["/bin/cp", "/usr/local/rc.local", "/etc/rc.local"]
+
 #ADD ./sudoers /etc/sudoers
 #ADD ./etc.tar /usr/local
 
