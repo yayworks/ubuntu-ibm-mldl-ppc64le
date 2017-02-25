@@ -10,7 +10,7 @@ ADD ./NAE/help.html /etc/NAE/help.html
 #docker rm -f $(docker ps -a -q)
 
 ADD ./install.tar /usr/local
-ADD ./.bashrc /etc/skel/.bashrc
+COPY ./.bashrc /etc/skel/.bashrc
 #CMD ["/bin/cp", "/usr/local/rc.local", "/etc/rc.local"]
 
 #ADD ./sudoers /etc/sudoers
