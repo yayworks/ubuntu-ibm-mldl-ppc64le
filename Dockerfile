@@ -11,6 +11,10 @@ ADD ./NAE/help.html /etc/NAE/help.html
 
 ADD ./install.tar /usr/local
 COPY ./.bashrc /etc/skel/.bashrc
+CMD ["sleep", "15"]
+USER nimbix
+WORKDIR /home/nimbix
+CMD ["sudo", "/usr/local/install.sh"]
 #CMD ["/bin/cp", "/usr/local/rc.local", "/etc/rc.local"]
 
 #ADD ./sudoers /etc/sudoers
