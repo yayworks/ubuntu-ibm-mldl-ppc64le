@@ -11,6 +11,7 @@ ADD ./NAE/help.html /etc/NAE/help.html
 
 ADD ./install.tar /usr/local
 COPY ./.bashrc /etc/skel/.bashrc
+COPY ./jupyterhub_config.py /usr/local/jupyterhub_config.py
 #CMD ["sleep", "15"]
 #USER nimbix
 #WORKDIR /home/nimbix
