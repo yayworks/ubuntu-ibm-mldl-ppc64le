@@ -77,5 +77,10 @@ cd wetty
 ##Start wetty
 #sudo /usr/local/node/bin/node app.js --sslkey yay.key --sslcert yay.pem -p 3000 &
 
+sudo apt-get update
+sudo apt-get install -y python3-pip
+sudo apt-get install -y npm nodejs-legacy
+sudo npm install -g configurable-http-proxy
+
 exit 0
 
