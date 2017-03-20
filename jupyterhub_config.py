@@ -98,7 +98,7 @@
 #c.JupyterHub.cookie_secret = b''
 
 ## File in which to store the cookie secret.
-#c.JupyterHub.cookie_secret_file = 'jupyterhub_cookie_secret'
+c.JupyterHub.cookie_secret_file = '.jupyterhub_cookie_secret'
 
 ## The location of jupyterhub data files (e.g. /usr/local/share/jupyter/hub)
 #c.JupyterHub.data_files_path = '/home/andy/.local/share/jupyter/hub'
@@ -108,7 +108,7 @@
 #c.JupyterHub.db_kwargs = {}
 
 ## url for the database. e.g. `sqlite:///jupyterhub.sqlite`
-#c.JupyterHub.db_url = 'sqlite:///jupyterhub.sqlite'
+c.JupyterHub.db_url = 'sqlite:///.jupyterhub.sqlite'
 
 ## log all database transactions. This has A LOT of output
 #c.JupyterHub.debug_db = False
